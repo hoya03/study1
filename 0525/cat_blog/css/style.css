@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    font-size: 100%; /* 16px */
+    line-height: 1.15; /*배수, %,px 가능*/
+}
+
+body{
+    color: #949087;
+    font-family:sans-serif;
+    background: #faf9ed url(../images/bg.png);
+    margin: 0;
+}
+
+ul, ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    background-color: transparent;
+    text-decoration: none;
+}
+
+button, input{
+    border:0;
+    outline:0;
+}
+
+p{
+    line-height: 1.6;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem; /*16px * 1.5*/
+    background: #fff;
+    border-radius: 0 0 10px 10px;    
+}
+
+img{ border-style: none; vertical-align: bottom;}
+
+h1, h2, h3, h4, h5, h6 {margin: 0;}
+
+/*Header*/
+
+header{
+    max-width: 1000px;
+    margin: 2.5rem auto 0;
+    height: 170px;
+    text-align: center;
+}
+
+.page-title{
+    font-size: 3.75rem;
+    font-family: 'Amatic Sc', cursive;
+    margin: 1rem 0;
+    padding-top: 2rem;
+ 
+}
+
+.page-desc{
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+/*section*/
+
+section{
+    margin-bottom: 3rem;
+    display:block;
+}
+
+.post-title{
+    padding-bottom: 10px;
+    background-image:linear-gradient(45deg, #fff 30%, #ccc 30%, #ccc 50%, #fff 50%, #fff 80%, #ccc 80%, #ccc 100%);
+    background-size: 6px 6px;
+    margin-bottom: 1.5rem;
+}
+
+.post-title h2{
+    background-color: #fff;
+    padding: 0 0.5rem 0.875rem;
+    font-family: 'Noto sans KR', sans-serif;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.post-title a{
+    color:#949087;
+}
+
+.post-title a:hover{
+    color: #605c55;
+}
+
+.post-thumb{
+    margin: 0 0 1rem 0;
+    position: relative;
+}
+
+.post-date{
+    position: absolute;
+    left: 0;
+    top: -10px;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Amatic SC', cursive;
+    background: #93d8d0;
+    width:80px;
+    height:80px;
+    text-align: center;
+    color:#fff;
+    border-radius:30% 60% 50% 70% / 50%;
+}
+
+.post-date span{
+    font-size: 1.25rem;
+    border-bottom: 2px rgba(255, 255, 255, .5) dotted;
+    display: block;
+    margin: 5px auto 0;
+}
+
+.post-date span:last-child{
+    border-bottom: none;
+}
+
+.post-img{
+    width:100%;
+    height:260px;
+    object-fit: cover;
+    border-radius:40% 70% 50% 30% / 50%;
+}
+
+article h3, article h4, article h5, article h6{
+    font-family: 'Noto Sans KR' snas-serif;
+    font-weight:500;
+    margin: 3rem 0 1rem;
+}
+
+article h3{
+    font-size: 1.5rem;
+    
+}
+article img{
+    max-width: 100%;
+    border-radius: 50px;
+}
+
+/*목록*/
+
+article li{
+    margin: .5rem 0;
+}
+
+article ul li:before{
+    content: '';
+    width:8px;
+    height: 8px;
+    background: #93d8d0;
+    display:inline-block;
+    margin: 0 8px 2px 0;
+    border-radius: 50%;
+}
+
+article h4{
+    font-size: 1.5rem;
+}
+
+article ol li{
+    counter-increment: list;
+}
+
+article ol li:before{
+    content: counter(list);
+    color:#93d8d0;
+    display:inline-block;
+    margin-right: 8px;
+}
